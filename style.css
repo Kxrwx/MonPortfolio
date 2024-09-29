@@ -1,6 +1,76 @@
-﻿body {
+﻿header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 100px;
+}
+h1 {
+    color: black;
+    font-size: 20px;
 }
 
-h1{
-    color: red;
+body {
+    
+}
+section{
+    display: flex;
+}
+.intro {
+    background-color: black;
+    width: 100%;
+}
+    .intro h2 {
+        color: red;
+        justify-self: flex-start;
+        margin-left: 80px;
+    }
+    .intro p {
+        color: red;
+        justify-self: flex-start;
+        margin-left: 50px;
+    }
+.moi {
+    background-color: red;
+    width: 100%;
+}
+    .moi h2 {
+        color: black;
+        justify-self: flex-start;
+        margin-left: 80px;
+    }
+
+.projet {
+    background-color: black;
+    width: 100%;
+}
+
+    .projet h2 {
+        color: red;
+        justify-self: flex-start;
+        margin-left: 80px;
+    }
+
+    .projet p {
+        color: red;
+        justify-self: flex-start;
+        margin-left: 50px;
+    }
+.box {
+     width: 100%;
+     justify-content: center;
+     display: grid;
+     margin: 15px;
+     grid-template-columns: repeat(auto-fit, minmax(min(25%, 100%), 25%));
+     grid-gap: 50px;       
+}
+    .box div{
+        background-color: beige;
+        border-radius:10px;
+        height: 200px;
+        width: 200px;
+    }
+
+footer{
+
 }
