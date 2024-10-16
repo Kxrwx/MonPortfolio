@@ -5,12 +5,23 @@
     <meta charset="utf-8" />
     <title>MonPortfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="Script.js"></script>
+    <script src="https://kit.fontawesome.com/0ed9bd2acf.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>Mon Porfolio</h1><!--Titre-->
+    <!--<header>
+        <h1>Mon Porfolio</h1>
 
-    </header>
+    </header>-->
+    <br />
+    <br />
+    <section>
+        <article class="nom">
+            <h2>Maxime IFFLAND</h2>
+        </article>
+    </section>
+    <br />
+    <br />
     <section>
         <article class="intro">
             <!--Bloc d'introduction-->
@@ -23,38 +34,79 @@
                 Je suis convaincu que l'informatique est un domaine en constante évolution, et je suis déterminé à rester à la pointe des nouvelles technologies et des meilleures pratiques. Mon objectif est de continuer à apprendre et à m'améliorer, afin de pouvoir contribuer de manière significative à des projets innovants et créatifs.
 
             </p>
+            <br />
         </article>
     </section>
+    <br />
+    <br />
     <section>
         <article class="moi">
             <!--Bloc de post it a propos de moi et document me concernent-->
             <h2>A propos de moi</h2>
-            <div class="box">
-                <div>
+            <div class="moi-box">
+                <div class="box">
+                    <div class="pdf-container">
+                        <a href="CV Stage pour BTS SIO.pdf"><img src="Photo CV.png"></a>-
+
+                    </div>
+                    <div class="web-competence">
+                        <div class="web-competence-top"><h3>Web compétences</h3></div>
+                        <div class="web-competence-para">
+                            <ul>
+                                <li>HTML/CSS : niveau avancé</li>
+                                </br>
+                                <li>JavaScript : niveau débutant</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="techno">
+                        <div class="py" onclick="toggleExpand(this)"><i class="fa-brands fa-python"></i></div>
+                        <div class="github" onclick="toggleExpand(this)"><i class="fa-brands fa-github"></i></div>
+                        <div class="SQL" onclick="toggleExpand(this)"><i class="fa-solid fa-database"></i></div>
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
 
                 </div>
-                <div>
-
+                <div class="ecole">
+                    <div class="ecole-top"><h3>Mes formations</h3></div>
+                    <div class="ecole-para">
+                        <ul>
+                            <li><h4>BTS SIO</h4><br />
+                                                <h5>Lycée des métiers René Cassin</h5><br />
+                                                                                      <h6>2024-En cours</h6>
+                            </li>
+                            </br>
+                            <br />
+                            <br />
+                            <li style="color: lightgrey"><h4><s>BUT1 GEII</s></h4><br />
+                                                  <h5><s>IUT de Haguenau</s></h5><br />
+                                                                          <h6><s>2023-2024</s></h6>
+                            </li>
+                            <br />
+                            <br />
+                            <br />
+                            <li style="color: lightgrey"><h4><s>Baccalauréa Général</s></h4><br />
+                                                            <h5><s>Lycée Seminaire de Walbourg</s></h5><br />
+                                                                                                <h6><s>2020-2023</s></h6>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-
             </div>
             <br />
             <br />
             <br />
         </article>
     </section>
+    <br />
+    <br />
     <section>
         <article class="projet">
             <!--Bloc de projet  -->
@@ -72,6 +124,8 @@
             <br />
         </article>
     </section>
+    <br />
+    <br />
     <footer>
     </footer>
 </body>
