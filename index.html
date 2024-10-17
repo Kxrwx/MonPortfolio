@@ -44,39 +44,41 @@
             <!--Bloc de post it a propos de moi et document me concernent-->
             <h2>A propos de moi</h2>
             <div class="moi-box">
-                <div class="box">
-                    <div class="pdf-container">
-                        <a href="CV Stage pour BTS SIO.pdf"><img src="Photo CV.png"></a>-
+                <div class="box-left">
+                    <!--box de gauche contenant techno+CV+Web comp=> pas display flex car element un en dessous des autres-->
+                    <div class="box">
+                        <!--box en tant que grid pour contenir les deux elemnt web compe et CV en grid un a coté des autres -->
+                        <div class="pdf-container">
+                            <a href="CV Stage pour BTS SIO.pdf"><img src="Photo CV.png"></a>-
 
-                    </div>
-                    <div class="web-competence">
-                        <div class="web-competence-top"><h3>Web compétences</h3></div>
-                        <div class="web-competence-para">
-                            <ul>
-                                <li>HTML/CSS : niveau avancé</li>
-                                </br>
-                                <li>JavaScript : niveau débutant</li>
-                            </ul>
                         </div>
+                        <div class="web-competence">
+                            <div class="web-competence-top"><h3>Web compétences</h3></div>
+                            <div class="web-competence-para">
+                                <ul>
+                                    <li>HTML/CSS : niveau avancé</li>
+                                    </br>
+                                    <li>JavaScript : niveau débutant</li>
+                                </ul>
+                            </div>
 
+                        </div>
                     </div>
-
-                    <div class="techno">
-                        <div class="py" onclick="toggleExpand(this)"><i class="fa-brands fa-python"></i></div>
-                        <div class="github" onclick="toggleExpand(this)"><i class="fa-brands fa-github"></i></div>
-                        <div class="SQL" onclick="toggleExpand(this)"><i class="fa-solid fa-database"></i></div>
+                    <div class="box-techno-center">
+                    <div class="box-techno">
+                        <div class="techno">
+                            <!-- prend la pace de la longueur de box sauf que en dessous grace à box-left sans display flex -->
+                            <div class="py" onclick="toggleExpand(this)"><i class="fa-brands fa-python"></i></div>
+                            <div class="github" onclick="toggleExpand(this)"><i class="fa-brands fa-github"></i></div>
+                            <div class="SQL" onclick="toggleExpand(this)"><i class="fa-solid fa-database"></i></div>
+                        </div>
+                        <div id="technoText"class="techno-text">Voici les technologies que j'ai déja utilisé ou étudié.</div>
                     </div>
-                    <div>
-
                     </div>
-                    <div>
-
-                    </div>
-
                 </div>
-                <div class="ecole">
+                    <div class="ecole">
                     <div class="ecole-top"><h3>Mes formations</h3></div>
-                    <div class="ecole-para">
+                        <div class="ecole-para">
                         <ul>
                             <li><h4>BTS SIO</h4><br />
                                                 <h5>Lycée des métiers René Cassin</h5><br />
@@ -98,7 +100,9 @@
                             </li>
                         </ul>
                     </div>
+                    
                 </div>
+                
             </div>
             <br />
             <br />
@@ -111,9 +115,10 @@
         <article class="projet">
             <!--Bloc de projet  -->
             <h2>Mes Projets</h2>
-            <div class="box">
-                <div>
-
+            <div class="Portfolio-center">
+                <div class="Portfolio">
+                    <div class= "Portfolio-photo"><img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg"></div>
+                    <div class="Portfolio-text"></div>
                 </div>
                 <div>
 
@@ -124,6 +129,9 @@
             <br />
         </article>
     </section>
+    <!--Rubrique News avec les technologie qui m'interesse donc React-->
+
+    <!--Rubriqueu métier de l'info-->
     <br />
     <br />
     <footer>

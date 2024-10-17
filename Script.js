@@ -1,24 +1,37 @@
-// JavaScript source code
+
 function toggleExpand(element) {
     const items = document.querySelectorAll('.techno > div');
+    const technoText = document.getElementById('technoText'); // La div o√π le texte sera affich√©
 
-    // VÈrifie si l'ÈlÈment est dÈj‡ agrandi
     const isExpanded = element.classList.contains('expanded');
 
-    // RÈinitialise tous les ÈlÈments
+    // R√©initialise tous les √©l√©ments et remet le texte par d√©faut
     items.forEach(item => {
-        item.classList.remove('expanded'); // Retire l'agrandissement
-        item.classList.remove('hidden'); // RÈaffiche tous les ÈlÈments
-        item.style.opacity = '1'; // Remet l'opacitÈ
+        item.classList.remove('expanded');
+        item.classList.remove('hidden');
+        item.style.opacity = '1';
     });
 
+    // Texte de base quand aucun √©l√©ment n'est s√©lectionn√©
     if (!isExpanded) {
-        // Si l'ÈlÈment n'est pas agrandi, on l'agrandit
-        element.classList.add('expanded'); // Agrandit l'ÈlÈment
+        // Si l'√©l√©ment n'est pas agrandi, on l'agrandit et on met √† jour le texte
+        element.classList.add('expanded');
         items.forEach(item => {
             if (item !== element) {
-                item.classList.add('hidden'); // Cache les autres ÈlÈments
+                item.classList.add('hidden');
             }
         });
+
+        // Met √† jour le texte selon la bo√Æte cliqu√©e
+        if (element.classList.contains('py')) {
+            technoText.textContent = "J'ai d√©ja utilis√© python plusieurs fois dans ma scolarit√© et j'ai tout les connaissances de base dans ce langage.";
+        } else if (element.classList.contains('github')) {
+            technoText.textContent = "J'ai utilis√© plusieurs fois GitHub pour des projets personnels notamment pour heberger mon site en ligne gratuitement pour effectuer des test sur ma page en developpement.";
+        } else if (element.classList.contains('SQL')) {
+            technoText.textContent = "Le langage SQL est un langage que j'ai appris en Terminal car il √©tait au programme de mon bac d'informatique. Je connais donc son utilit√© est l'ensemble des commandes de base jusqu'au jointure.";
+        }
+    } else {
+        // Si l'√©l√©ment est d√©j√† agrandi, on revient √† l'√©tat initial et au texte de base
+        technoText.textContent = "Voici les technologies que j'ai d√©j√† utilis√© ou √©tudi√©.";
     }
 }
