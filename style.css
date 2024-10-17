@@ -376,14 +376,16 @@ section{
 
     position: relative;
     width: 80%;
-    height: 500px;
-    background-color: red;
-    border: 0.5px solide #FFFFFF;
+    height: 400px;
+    border: 2px solid #FFFFFF;
     border-radius: 10px;
+    
 }
 .Portfolio-photo{
     width: center;
-    z-index: 2;
+    clip-path: inset(0 0 179px 0);
+    border-radius:10px 10px 0 0; 
+    top: 0;
 
 }
 .Portfolio-photo img{
@@ -391,16 +393,18 @@ section{
     width: 100%;
     height: auto;
     border-radius:10px 10px 0 0; 
-    border-bottom: 1px solid #FFFFFF;
-    top: 0;
+
+    
 }
 .Portfolio-text{
+    position: absolute;
     bottom: 0;
     background-color: #263337;
     border-radius: 0 0 10px 10px;
-    height: 200px;
+    height: 250px;
     width: 100%;
-    z-index: 3;
+    border-top: 2px solid #FFFFFF;
+
 }
 footer{
 
