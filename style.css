@@ -33,12 +33,12 @@ section{
     min-width: 150px;
     border: 2px solid #000000;
     justify-content: center;
-    align-items: center;
+    align-text: center;
     display: flex;
 }
     .nom h2 {
         color: #FFFFFF;
-        justify-self: center;
+        justify-self: start;
         margin: 30px;
         font-family: Arial;
         font-size: 20px;
