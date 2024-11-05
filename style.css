@@ -25,6 +25,7 @@ section{
 .moi,
 .projet{
     max-width: 1000px;
+    min-width: 450px;
 }
 .nom {
     border-radius: 20px;
@@ -67,7 +68,7 @@ section{
     width: 90%;
     opacity: 0.9;
     border: 2px solid #000000;
-    min-width: 450px;
+    
 }
     .moi h2 {
         color: #FFFFFF;
