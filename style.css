@@ -38,7 +38,7 @@ section{
 }
     .nom h2 {
         color: #FFFFFF;
-        justify-self: flex-start;
+        justify-self: center;
         margin: 30px;
         font-family: Arial;
         font-size: 20px;
