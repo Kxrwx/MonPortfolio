@@ -16,10 +16,13 @@
         section {
             height: 1000px;
         }
-
+        .parent{
+            width: 100%;
+            height: auto;
+        }
         .container {
             
-            position: relative;
+            position: absolute;
             width: 100%;
             height: auto; 
             display: flex;
@@ -56,18 +59,22 @@
         }
         .container-cloud 
         .container-cloud1{
-            display: none;
+            display: block;
+            opacity: 0;
+            z-index: 3;
         }
     </style>
 </head>
 <body>
     <section></section>
-    <div class="container">
-        <div class="container-clair">
-            <img src="clair.png" />
-        </div>
-        <div class="container-ampoule">
-            <img src="ampoule.jpg" />
+    <div class="parent">
+        <div class="container">
+            <div class="container-clair">
+                <img src="clair.png" />
+            </div>
+            <div class="container-ampoule">
+                <img src="ampoule.jpg" />
+            </div>
         </div>
     </div>
     <div class="container-cloud">
@@ -75,6 +82,8 @@
             <img src="cloud1.png"/>
         </div>
     </div>
+
+
 
 
 
@@ -93,6 +102,7 @@
     ampoule.style.opacity = "1";
 
 
+
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(container, {
@@ -105,10 +115,7 @@
             scrub: true,
             markers: true,
             pin: true,
-            onComplete: () => {
-                cloud.style.display = "block";
-                cloud1.style.display = "block";
-            },
+            
             onEnter: () => {
                 clair.style.opacity = "1";
                 ampoule.style.opacity = "1";
@@ -116,13 +123,15 @@
             onLeave: () => {
                 clair.style.opacity = "0"; 
                 ampoule.style.opacity = "1";
-                
+                cloud.style.opacity = "1";
+                cloud1.style.opacity = "1";
 
             },
             onEnterBack: () => {
                 clair.style.opacity = "1";
                 ampoule.style.opacity = "1";
-
+                cloud.style.opacity = "0";
+                cloud1.style.opacity = "0";
             },
         }
     });
