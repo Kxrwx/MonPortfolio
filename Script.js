@@ -1,4 +1,9 @@
 
+
+
+
+
+    //fonction pour les outils 
 function toggleExpand(element) {
     const items = document.querySelectorAll('.techno > div');
     const technoText = document.getElementById('technoText'); // La div où le texte sera affiché

@@ -11,10 +11,11 @@ h1 {
 }
 
 body {
-    background-image: url('https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    /*background-image: url('https://images.unsplash.com/photo-1708778002586-37c4f23b7f3f?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    */
     min-width: 900px;
 }
 section{
@@ -78,12 +79,11 @@ section{
     }
 
 .projet {
+    display: block;
 
-    border-radius: 20px;
     background-color: #263337;
     opacity: 0.9;
-    border: 2px solid #000000;
-    width: 90%;
+    width: 100%;
 }
 
     .projet h2 {
@@ -416,8 +416,5 @@ section{
     height: 250px;
     width: 100%;
     border-top: 2px solid #FFFFFF;
-
-}
-footer{
 
 }

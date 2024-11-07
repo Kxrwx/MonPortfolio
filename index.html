@@ -5,8 +5,12 @@
     <meta charset="utf-8" />
     <title>MonPortfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styletrans.css">
     <script src="Script.js"></script>
+    <script src="scrypttrans.js"></script>
     <script src="https://kit.fontawesome.com/0ed9bd2acf.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <!--<header>
@@ -111,9 +115,84 @@
     </section>
     <br />
     <br />
+   
+    <div class="parent"></div>
+        <div class="container">
+            <div class="container-clair">
+                <img src="ScrollTrigger/clair.png" />
+            </div>
+            <div class="container-ampoule">
+                <img src="ScrollTrigger/ampoule.jpg" />
+            </div>
+        </div>
+    </div>
+    <script>
+        const clair = document.querySelector(".container-clair");
+        const ampoule = document.querySelector(".container-ampoule");
+        const container = document.querySelector(".container");
+        const cloud = document.querySelector(".container-cloud");
+        const cloud1 = document.querySelector(".container-cloud1");
+        clair.style.opacity = "1";
+        ampoule.style.opacity = "1";
+    
+    
+    
+        gsap.registerPlugin(ScrollTrigger);
+    
+        gsap.to(container, {
+            scale: 4,
+            transformOrigin: "48% center",
+            scrollTrigger: {
+                trigger: container,
+                start: "center 30%",
+                end: "bottom -10%",
+                scrub: true,
+                markers: true,
+                pin: true,
+                
+                onEnter: () => {
+                    clair.style.opacity = "1";
+                    ampoule.style.opacity = "1";
+                },
+                onLeave: () => {
+                    clair.style.opacity = "0"; 
+                    ampoule.style.opacity = "1";
+
+                },
+                onEnterBack: () => {
+                    clair.style.opacity = "1";
+                    ampoule.style.opacity = "1";
+                },
+            }
+        });
+        gsap.to(ampoule, {
+            
+            scale: 0.28,
+            x: "-1.75%",
+            y:"-3%",
+            duration: 1,
+            scrollTrigger: {
+                trigger: container,
+                start: "bottom 25%", 
+                end: "bottom -50%", 
+                scrub: true,
+                markers: true,
+                pin: true,
+
+            },
+            
+        
+            
+           
+        });
+        
+    
+    </script>
+    <div class="suite"><div>
+    <div style="height: 2000px;"></div>
     <section>
         <article class="projet">
-            <!--Bloc de projet  -->
+            
             <h2>Mes Projets</h2>
             <br>
             <br>
@@ -131,12 +210,13 @@
             <br />
         </article>
     </section>
+    <!--Bloc de projet  -->
     <!--Rubrique News avec les technologie qui m'interesse donc React-->
 
     <!--Rubriqueu métier de l'info-->
-    <br />
-    <br />
+
     <footer>
     </footer>
+    
 </body>
 </html>

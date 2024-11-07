@@ -1,0 +1,51 @@
+.parent{
+    width: 100%;
+    position: relative;
+    margin-right: auto;
+    margin-top: 400px;
+    
+}
+.container {
+    
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    transition: ease-in-out;
+}
+
+.container-clair,
+.container-ampoule {
+    margin-top: 22.5%;/*195px*/
+    width: 100%;
+    height: auto;
+}
+
+    .container-clair img,
+    .container-ampoule img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition : 1s;
+    }
+
+.container-clair {
+    z-index: 2;
+    position: absolute;
+}
+
+.container-ampoule {
+    position: absolute;
+    z-index: 1;
+    transform: scale(0.5);
+    transition : 1s;
+
+}
+.container-cloud 
+.container-cloud1{
+    display: block;
+    opacity: 0;
+    z-index: 3;
+}
