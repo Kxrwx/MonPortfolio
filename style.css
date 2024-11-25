@@ -557,19 +557,72 @@ canvas {
         text-decoration: none;
         color: inherit;
     }
-.linkedin:hover,
-.mail:hover,
-.git:hover{
+.linkedin div:hover,
+.mail div:hover,
+.git div:hover {
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: 1s;
+    box-shadow: #E3DEFB 7px 5px;
+}
+.linkedin div:hover{
+    background-color: #FFFFFF;
+}
+.linkedin div:hover i{
+    color: blue;
+}
+.mail div:hover {
+    background-color: #FFFFFF;
+}
+
+    .mail div:hover i {
+        color: blue;
+    }
+.git div:hover {
+    background-color: #FFFFFF;
+}
+.git div:hover i{
+    color: #000000;
 }
 .linkedin,
 .mail,
-.git{
-
-    text-align-last:center;
-    transition: 0.5s;
+.git {
+    text-align-last: center;
 }
+.linkedin div,
+.mail div,
+.git div{
+    transition: 1s;
+}
+    .mail div {
+        background-color: blue;
+        padding: 5px;
+        border-radius: 50%;
+        height: 75px;
+        width: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .git div {
+        background-color: black;
+        padding: 5px;
+        border-radius: 50%;
+        height: 75px;
+        width: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .linkedin div {
+        background-color: blue;
+        padding: 5px;
+        border-radius: 50%;
+        height: 75px;
+        width: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 .linkedin h1,
 .mail h1,
 .git h1{
@@ -578,15 +631,15 @@ canvas {
 }
 .linkedin i {
     font-size: 60px;
-    color: blue;
+    color: #FFFFFF;
 }
 .mail i {
     font-size: 60px;
-    color: blue;
+    color: #FFFFFF;
 }
 .git i {
     font-size: 60px;
-    color: black;
+    color: #FFFFFF;
 }
 .article {
     position: relative;
