@@ -15,6 +15,7 @@
     
 </head>
 <body>
+
     <!--<header>
         <h1>Mon Porfolio</h1>
 
@@ -33,11 +34,7 @@
             <!--Bloc d'introduction-->
             <h2>Introduction</h2>
             <p>
-                Je suis passionné par l'informatique depuis que j'ai découvert cette discipline pendant ma terminale, grâce à l'option NSI (Numérique et Sciences Informatiques). Cette matiere m'a ouvert les yeux sur un monde fascinant où la technologie et la créativité se rencontrent. Mon domaine préféré est le code et la création de nouvelles choses. J'aime apprendre de nouvelles compétences et je suis constamment motivé par l'envie de m'améliorer.
-
-                Actuellement, je suis étudiant en BTS SIO (Services Informatiques aux Organisations), une formation qui me permet d'approfondir mes connaissances et de développer des compétences pratiques dans le domaine de l'informatique. Cette formation me donne l'opportunité d'explorer davantage le développement logiciel, la gestion des systèmes et des réseaux, et bien d'autres aspects de l'informatique.
-
-                Je suis convaincu que l'informatique est un domaine en constante évolution, et je suis déterminé à rester à la pointe des nouvelles technologies et des meilleures pratiques. Mon objectif est de continuer à apprendre et à m'améliorer, afin de pouvoir contribuer de manière significative à des projets innovants et créatifs.
+                Je suis passionné par l'informatique depuis que j'ai découvert cette discipline pendant ma terminale, grâce à l'option NSI (Numérique et Sciences Informatiques). Cette matiere m'a ouvert les yeux sur un monde fascinant où la technologie et la créativité se rencontrent.
 
             </p>
             <br />
@@ -45,7 +42,71 @@
     </section>
     <br />
     <br />
+    <canvas id="scene"></canvas>
+    <script src="Fond.js"></script>
     <section>
+        <article class="intro2">
+            <div class="tech-border">
+                <div class="tech">
+
+                    <h1>Tech que <i class="fa-solid fa-heart"></i></h1>
+                    <div class="grid-tech">
+                        <div class="container-react">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <div class="container-IA">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div class="container-JS">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hobby-border">
+                <div class="hobby">
+                    <h1>Ce que j'aime</h1>
+                    <div class="grid-hobby">
+                        <div class="container-gaming">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <div class="container-code">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="container-velo">
+                            <i class="fa-solid fa-bicycle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <section>
+        <article class="contacte">
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/maxime-iffland-3178b82b6/"><i class="fa-brands fa-linkedin"></i></a>
+                <h1>Mon LinkedIn</h1>
+            </div>
+            <div class="mail">
+                <a href="mailto:maxime.iffland@icloud.com"><i class="fa-solid fa-envelope"></i></a>
+                <h1>Mon Mail</h1>
+            </div>
+            <div class="git">
+                <a href="https://github.com/Kxrwx"><i class="fa-brands fa-square-github"></i></a>
+                <h1>Mon GitHub</h1>
+            </div>
+        </article>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <section>
+
         <article class="moi">
             <!--Bloc de post it a propos de moi et document me concernent-->
             <h2>A propos de moi</h2>
@@ -55,7 +116,7 @@
                     <div class="box">
                         <!--box en tant que grid pour contenir les deux elemnt web compe et CV en grid un a coté des autres -->
                         <div class="pdf-container">
-                            <a href="CV Stage pour BTS SIO.pdf"><img src="Photo CV.png"></a>-
+                            <a href="CV Stage pour BTS SIO.pdf"><img src="Photo CV.png"></a>
 
                         </div>
                         <div class="web-competence">
@@ -73,7 +134,6 @@
                     <div class="box-techno-center">
                         <div class="box-techno">
                             <div class="techno">
-                                <!-- prend la pace de la longueur de box sauf que en dessous grace à box-left sans display flex -->
                                 <div class="py" onclick="toggleExpand(this)"><i class="fa-brands fa-python"></i></div>
                                 <div class="github" onclick="toggleExpand(this)"><i class="fa-brands fa-github"></i></div>
                                 <div class="SQL" onclick="toggleExpand(this)"><i class="fa-solid fa-database"></i></div>
@@ -118,101 +178,182 @@
             <br />
         </article>
     </section>
+    <br />
+    <br />
+    <br />
+    <section>
+        <div class="fleche1">
+            <h5>Scroll down</h5>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
 
-    <div class="parent"></div>
-    <div class="container">
-        <div class="container-clair">
-            <img src="clair.png" />
+    </section>
+
+    <div class="parent">
+        <div id="container">
+            <div class="container-clair">
+                <img src="clair.png" />
+            </div>
+            <div class="container-ampoule">
+                <img src="ampoule.jpg" />
+            </div>
+
         </div>
-        <div class="container-ampoule">
-            <img src="ampoule.jpg" />
-        </div>
-    </div>
+
     </div>
     <div class="body2">
         <section>
-            <div class="carousel">
-                <ul class="slider">
-                    <li class="item"><img src="https://lemag.nikonclub.fr/wp-content/uploads/2017/07/08.jpg" alt="Quels objectifs Nikkor choisir pour la photographie de paysage" /><div class="text"><h3>Mon Projet 1</h3><p>description de mon projet 1</p></div></li>
-                    <li class="item"><img src="https://th.bing.com/th/id/R.6a81a5d838d5b00d12fee638f46327e5?rik=qjWSoO7iSE%2ftEg&amp;pid=ImgRaw&amp;r=0" alt="How to Create an Amazing Landscape Photo" /><div class="text"><h3>Mon Projet 2</h3><p>description de mon projet 2</p></div></li>
-                    <li class="item"><img src="https://s1.1zoom.me/b5050/214/Lake_Mountains_Scenery_441215_1920x1200.jpg" alt="Fonds d&#39;ecran 1920x1200 Lac Montagnes Photographie de paysage Nature ..." /><div class="text"><h3>Mon Projet 3</h3><p>description de mon projet 3</p></div></li>
-                    <li class="item"><img src="https://th.bing.com/th/id/R.6a81a5d838d5b00d12fee638f46327e5?rik=qjWSoO7iSE%2ftEg&amp;pid=ImgRaw&amp;r=0" alt="How to Create an Amazing Landscape Photo" /><div class="text"><h3>Mon Projet 4</h3><p>description de mon projet 4</p></div></li>
-                    <li class="item"><img src="https://s1.1zoom.me/b5050/214/Lake_Mountains_Scenery_441215_1920x1200.jpg" alt="Fonds d&#39;ecran 1920x1200 Lac Montagnes Photographie de paysage Nature ..." /><div class="text"><h3>Mon Projet 5</h3><p>description de mon projet 5</p></div></li>
-                </ul>
-                <button class="prev">❮</button>
-                <button class="next">❯</button>
+            <div class="fleche2">
+                <h5>Scroll down</h5>
+                <i class="fa-solid fa-arrow-down"></i>
             </div>
+        </section>
+        <br />
+        <br />
+        <br />
+        <section>
+            <div class="projet">
+                <h1>Mes Projets</h1>
+                <div class="carousel">
+
+                    <ul class="slider">
+                        <li class="item"><img src="https://lemag.nikonclub.fr/wp-content/uploads/2017/07/08.jpg" alt="Quels objectifs Nikkor choisir pour la photographie de paysage" /><div class="text"><h3>Mon Projet 1</h3><p>description de mon projet 1</p></div></li>
+                        <li class="item"><img src="https://th.bing.com/th/id/R.6a81a5d838d5b00d12fee638f46327e5?rik=qjWSoO7iSE%2ftEg&amp;pid=ImgRaw&amp;r=0" alt="How to Create an Amazing Landscape Photo" /><div class="text"><h3>Mon Projet 2</h3><p>description de mon projet 2</p></div></li>
+                        <li class="item"><img src="https://s1.1zoom.me/b5050/214/Lake_Mountains_Scenery_441215_1920x1200.jpg" alt="Fonds d&#39;ecran 1920x1200 Lac Montagnes Photographie de paysage Nature ..." /><div class="text"><h3>Mon Projet 3</h3><p>description de mon projet 3</p></div></li>
+                        <li class="item"><img src="https://th.bing.com/th/id/R.6a81a5d838d5b00d12fee638f46327e5?rik=qjWSoO7iSE%2ftEg&amp;pid=ImgRaw&amp;r=0" alt="How to Create an Amazing Landscape Photo" /><div class="text"><h3>Mon Projet 4</h3><p>description de mon projet 4</p></div></li>
+                        <li class="item"><img src="https://s1.1zoom.me/b5050/214/Lake_Mountains_Scenery_441215_1920x1200.jpg" alt="Fonds d&#39;ecran 1920x1200 Lac Montagnes Photographie de paysage Nature ..." /><div class="text"><h3>Mon Projet 5</h3><p>description de mon projet 5</p></div></li>
+                    </ul>
+                    <button class="prev">❮</button>
+                    <button class="next">❯</button>
+                </div>
+            </div>
+        </section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <section>
+            <article class="article">
+                <h1>Les articles qui m'interessent</h1>
+                <div class="container-article">
+                    <div>
+
+                    </div>
+                </div>
+            </article>
         </section>
 
 
-        <!--Bloc de projet  -->
-        <!--Rubrique News avec les technologie qui m'interesse donc React-->
-        <!--Rubriqueu métier de l'info-->
+
+
     </div>
     <footer>
     </footer>
+    <!--Bloc de projet  -->
+    <!--Rubrique News avec les technologie qui m'interesse donc React-->
+    <!--Rubriqueu métier de l'info-->
+
     <script>
 
-        const clair = document.querySelector(".container-clair");
-        const ampoule = document.querySelector(".container-ampoule");
-        const container = document.querySelector(".container");
-        const cloud = document.querySelector(".container-cloud");
-        const cloud1 = document.querySelector(".container-cloud1");
-        let Tclair = clair.offsetHeight;
-        let Tampoule = ampoule.offsetHeight;
-        document.querySelector(".body2").style.margin = `${Tclair * 3.5}px 0 0 0`;
-        clair.style.opacity = "1";
-        ampoule.style.opacity = "1";
-        container.style.margin = `${Tclair / 2}px 0 0 0`;
+        (() => {
+            const clair = document.querySelector(".container-clair");
+            const ampoule = document.querySelector(".container-ampoule");
+            const container = document.querySelector("#container");
+            const body2 = document.querySelector(".body2");
 
+            let resizeTimeout2;
 
-
-
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.defaults({ ease: "none", duration: 2 });
-        gsap.to(container, {
-            scale: 4,
-            transformOrigin: "48% center",
-            scrollTrigger: {
-                trigger: container,
-                start: "center 30%",
-                end: "bottom -10%",
-                scrub: true,
-                markers: true,
-                pin: true,
-
-                onEnter: () => {
-                    clair.style.opacity = "1";
-                    ampoule.style.opacity = "1";
-                },
-                onLeave: () => {
-                    clair.style.opacity = "0";
-                    ampoule.style.opacity = "1";
-
-                },
-                onEnterBack: () => {
-                    clair.style.opacity = "1";
-                    ampoule.style.opacity = "1";
-                },
+            function adjustMargins() {
+                const width = window.innerWidth;
+                let Tclair = clair.offsetHeight;
+                if (width > 2200) {
+                    container.style.display = "none";
+                    document.querySelector(".fleche1").style.display = "none";
+                    document.querySelector(".fleche2").style.display = "none";
+                } else if (width > 2000) {
+                    container.style.margin = `${Tclair / 3.5}px 0 ${Tclair * 2.3}px 0`;
+                } else if (width > 1600) {
+                    container.style.margin = `${Tclair / 3}px 0 ${Tclair * 2.6}px 0`;
+                } else if (width > 1400) {
+                    container.style.margin = `${Tclair / 2.8}px 0 ${Tclair * 2.8}px 0`;
+                } else if (width > 1200) {
+                    container.style.margin = `${Tclair / 2.4}px 0 ${Tclair * 3}px 0`;
+                } else if (width > 800) {
+                    container.style.margin = `${Tclair / 2}px 0 ${Tclair * 3.5}px 0`;
+                } else if (width > 600) {
+                    container.style.margin = `${Tclair / 1.7}px 0 ${Tclair * 4}px 0`;
+                } else if (width > 480) {
+                    container.style.margin = `${Tclair / 1.5}px 0 ${Tclair * 5}px 0`;
+                } else {
+                    container.style.margin = `${Tclair / 2}px 0 ${Tclair * 5}px 0`;
+                }
             }
-        });
-        gsap.to(ampoule, {
 
-            scale: 0.28,
-            x: "-1.75%",
-            y: "-3%",
-            duration: 1,
-            scrollTrigger: {
-                trigger: container,
-                start: "bottom 25%",
-                end: "bottom -50%",
-                scrub: true,
-                markers: true,
-                pin: true,
+            function reloadPageWithDelay() {
+                clearTimeout(resizeTimeout2);
+                resizeTimeout2 = setTimeout(() => {
+                    window.location.reload();
+                }, 1000);
+            }
 
-            },
+            function init() {
+                clair.style.opacity = "1";
+                ampoule.style.opacity = "1";
 
-        });
+                adjustMargins();
+                window.addEventListener("resize", () => {
+                    adjustMargins();
+                    reloadPageWithDelay();
+                });
+            }
+
+            init();
+
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.to(container, {
+                scale: 4,
+                transformOrigin: "48% center",
+                scrollTrigger: {
+                    trigger: container,
+                    start: "center 30%",
+                    end: "bottom -10%",
+                    scrub: true,
+                    markers: false,
+                    pin: true,
+                    onEnter: () => {
+                        clair.style.opacity = "1";
+                        ampoule.style.opacity = "1";
+                        document.querySelector("body").style.backgroundColor = "white";
+                    },
+                    onLeave: () => {
+                        clair.style.opacity = "0";
+                        ampoule.style.opacity = "1";
+                        document.querySelector("body").style.backgroundColor = "black";
+                    },
+                    onEnterBack: () => {
+                        clair.style.opacity = "1";
+                        ampoule.style.opacity = "1";
+                        document.querySelector("body").style.backgroundColor = "white";
+                    },
+                },
+            });
+
+            gsap.to(ampoule, {
+                scale: 0.28,
+                x: "-1.75%",
+                y: "-3%",
+                duration: 1,
+                scrollTrigger: {
+                    trigger: container,
+                    start: "bottom 25%",
+                    end: "bottom -50%",
+                    scrub: true,
+                    markers: false,
+                    pin: true,
+                },
+            });
+        })();
+
 
 
 
@@ -221,5 +362,8 @@
     <script src="projetScript.js"></script>
 
 
+
+
 </body>
+
 </html>

@@ -4,9 +4,8 @@
     margin-right: auto;
     
 }
-.container {
-    
-    position: absolute;
+#container {
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
@@ -15,9 +14,11 @@
     transition: ease-in-out;
 }
 
+
 .container-clair,
 .container-ampoule {
     margin-top: 22.5%;/*195px*/
+    position: relative;
     width: 100%;
     height: auto;
 }
@@ -41,10 +42,4 @@
     transform: scale(0.5);
     transition : 1s;
 
-}
-.container-cloud 
-.container-cloud1{
-    display: block;
-    opacity: 0;
-    z-index: 3;
 }

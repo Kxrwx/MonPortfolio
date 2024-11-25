@@ -40,3 +40,4 @@ function toggleExpand(element) {
         technoText.textContent = "Voici les technologies que j'ai déjà utilisé ou étudié.";
     }
 }
+
