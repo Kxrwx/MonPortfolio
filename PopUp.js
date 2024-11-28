@@ -7,10 +7,12 @@ let supprim = false;
 React.addEventListener('click', function () {
     if (PopUpReact.style.display === 'none' || PopUpReact.style.display === '' || supprim === true) {
         PopUpReact.style.display = 'block'; 
+        PopUpReact.style.opacity = '1';
         document.body.style.overflow = 'hidden'; 
         supprim = false; 
     } else {
         PopUpReact.style.display = 'none'; 
+        PopUpReact.style.opacity = '0';
         document.body.style.overflow = ''; 
     }
 });
