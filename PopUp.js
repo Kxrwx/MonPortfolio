@@ -2,7 +2,6 @@ const React = document.getElementById('container-react');
 const PopUpReact = document.getElementById('PopUpReact');
 const Supp = document.getElementById('supp');
 
-PopUpReact.style.display = 'none';
 let supprim = false; 
 
 React.addEventListener('click', function () {
