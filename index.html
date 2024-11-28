@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>MonPortfolio</title>
+    <link rel="stylesheet" type="text/css" href="PopUpCSS.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="styletrans.css">
     <link rel="stylesheet" href="projetCSS.css">
@@ -12,16 +13,21 @@
     <script src="https://kit.fontawesome.com/0ed9bd2acf.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    
+
 </head>
 <body>
-
-    <!--<header>
-        <h1>Mon Porfolio</h1>
-
-    </header>-->
-    <br />
-    <br />
+    <div class="PopUpReact" id="PopUpReact">
+        <div>
+            <button id="supp">X</button>
+            <h1>Le React</h1>
+            <p>React est une bibliothèque JavaScript open-source, créée par Facebook en 2013, qui permet de développer des interfaces utilisateur dynamiques et performantes. Elle repose sur le concept de composants réutilisables, qui facilitent le développement et la maintenance des applications. Avec son système de DOM virtuel (Virtual DOM), React optimise les mises à jour et améliore les performances, surtout dans les projets à grande échelle. Elle est particulièrement populaire pour les applications web modernes, grâce à sa flexibilité et son écosystème riche (Redux, React Router, etc.). De nombreuses entreprises comme Instagram, Airbnb ou Netflix utilisent React pour créer des expériences utilisateur fluides et interactives. Accessible aux débutants, elle est également un outil puissant pour les développeurs confirmés.</p>
+            <div>
+                <a href="https://react.dev/"><img src="article1_react.png"/></a>
+                <a href="https://medium.com/@navneetskahlon/understanding-state-vs-props-in-react-a-comprehensive-guide-with-code-examples-e1ef236718a7"><img src="article2_react.jpg"/></a>
+                <a href="https://medium.com/@JavaScript-World/react-in-2024-evolution-performance-and-the-future-of-front-end-b6b0f78b874d"><img src="article3_react.jpg"/></a>
+            </div>
+        </div>
+    </div>
     <section>
         <article class="nom">
             <h2>Maxime IFFLAND</h2>
@@ -51,7 +57,7 @@
 
                     <h1>Tech que <i class="fa-solid fa-heart"></i></h1>
                     <div class="grid-tech">
-                        <div class="container-react">
+                        <div class="container-react" id="container-react">
                             <i class="fa-brands fa-react"></i>
                         </div>
                         <div class="container-IA">
@@ -208,6 +214,10 @@
                 <i class="fa-solid fa-arrow-down"></i>
             </div>
         </section>
+        <br />
+        <br />
+        <br />
+        <br />
         <br />
         <br />
         <br />
@@ -369,6 +379,7 @@
 
     </script>
     <script src="projetScript.js"></script>
+    <script src="PopUp.js"></script>
 
 
 

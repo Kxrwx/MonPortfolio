@@ -1,0 +1,74 @@
+﻿.PopUpReact{
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: #00000001;
+    backdrop-filter: blur(10px);
+}
+.PopUpReact div{
+    position: fixed;
+    min-width: 800px;
+    z-index: 51;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 60%;
+    background-color: #000000;
+    border-radius: 20px;
+}
+#supp {
+    position: relative;
+    z-index: 51;
+    margin: 40px 20px auto auto;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    color: #000000;
+    border-radius: 50%;
+}
+.PopUpReact div h1 {
+    position: relative;
+    z-index: 51;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.PopUpReact div p {
+    position: relative;
+    padding: 30px;
+    z-index: 51;
+    color: #FFFFFF;
+    font-size: 12px;
+
+}
+.PopUpReact div div {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+.PopUpReact div div a{
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 51;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+
+}

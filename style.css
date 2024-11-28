@@ -45,7 +45,7 @@ section{
     min-width: 800px;
 }
 .projet h1{
-    color: #000000;
+    color: #FFFFFF;
     padding:20px 0 20px 40px;
     font-size: 25px;
 }
@@ -587,6 +587,7 @@ canvas {
 .mail,
 .git {
     text-align-last: center;
+
 }
 .linkedin div,
 .mail div,
@@ -652,6 +653,7 @@ canvas {
 .article h1{
     color: #FFFFFF;
     margin-left: 5%;
+    margin-top: 30px;
 }
 
 .container-article{
