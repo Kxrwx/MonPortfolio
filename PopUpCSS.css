@@ -1,5 +1,6 @@
 ﻿.PopUpReact{
     display: none;
+    opacity: 0;
     position: fixed;
     z-index: 50;
     top: 50%;
