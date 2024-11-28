@@ -3,7 +3,7 @@ const PopUpReact = document.getElementById('PopUpReact');
 const Supp = document.getElementById('supp');
 
 PopUpReact.style.display = 'none';
-let supprim = false; // Booléen initialisé correctement
+let supprim = false; 
 
 React.addEventListener('click', function () {
     if (PopUpReact.style.display === 'none' || PopUpReact.style.display === '' || supprim === true) {
@@ -19,6 +19,6 @@ React.addEventListener('click', function () {
 Supp.addEventListener('click', function () {
 
     PopUpReact.style.display = 'none';
-    document.body.style.overflow = ''; // Réactiver le scroll
-    supprim = true; // Mettre supprim à true pour indiquer qu'il est supprimé
+    document.body.style.overflow = ''; 
+    supprim = true; 
 });
